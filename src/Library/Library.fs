@@ -2,7 +2,7 @@
 
 module Solve =
     open System
-    let currentDay: string = "1";
+    let currentDay: string = "2";
 
     let solve (day: Option<string>): string =
         let newDay = 
@@ -11,6 +11,7 @@ module Solve =
                 | None -> currentDay
         match newDay with
             | "1" -> day1.solve
+            | "2" -> day2.solve
             | _ -> raise <| NotImplementedException()
 
         
