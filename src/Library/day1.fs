@@ -1,5 +1,6 @@
 namespace Library
 module day1 =
+    open shared
     let inline charToInt (c: char) = int c - int '0'
     let replaceString (text: string) (newValue: string) (old: string) = 
         text.Replace(old, newValue)
@@ -39,7 +40,7 @@ module day1 =
     printfn "Reading files for day 1!"
 
     let solve: string =
-        let sum = 0
+        let fullPath = getFilePath "input1"
         let lines = System.IO.File.ReadLines(fullPath)
         // Seq.iter (fun line -> printfn "%s" (wordToDigit line)) lines
         let sum = Seq.map (fun line -> stringToCalibration (wordToDigit line)) lines |> Seq.sum
