@@ -9,6 +9,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Library", "src\Library\Libr
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "App", "src\App\App.fsproj", "{1575B66E-2805-4567-B79A-BB61E299BAD0}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "App.Tests", "src\App\App.Tests\App.Tests.fsproj", "{912648B7-B4EF-4042-95C2-A6A7CAB4DD00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{1575B66E-2805-4567-B79A-BB61E299BAD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1575B66E-2805-4567-B79A-BB61E299BAD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1575B66E-2805-4567-B79A-BB61E299BAD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{912648B7-B4EF-4042-95C2-A6A7CAB4DD00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{912648B7-B4EF-4042-95C2-A6A7CAB4DD00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{912648B7-B4EF-4042-95C2-A6A7CAB4DD00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{912648B7-B4EF-4042-95C2-A6A7CAB4DD00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9F21C285-A573-4431-AF26-7B741D122ABB} = {7880C8EA-00CD-4AD6-8766-0DBCFA5D8863}
