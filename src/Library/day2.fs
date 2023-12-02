@@ -1,5 +1,5 @@
 namespace Library
-module day1 =
+module day2 =
     let inline charToInt (c: char) = int c - int '0'
     let replaceString (text: string) (newValue: string) (old: string) = 
         text.Replace(old, newValue)
@@ -36,8 +36,12 @@ module day1 =
         let last = Seq.toList inputString |> List.rev |> firstNumericChar
         first * 10 + last
 
+    open System.IO
     printfn "Reading files for day 1!"
-
+    let baseDirectory = __SOURCE_DIRECTORY__
+    let baseDirectory' = Directory.GetParent(baseDirectory)
+    let filePath = "Library/data/input1.txt"
+    let fullPath = Path.Combine(baseDirectory'.FullName, filePath)
     let solve: string =
         let sum = 0
         let lines = System.IO.File.ReadLines(fullPath)
